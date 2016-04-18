@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import JSONJoy
+
 
 protocol ViewPresensterProtocol
 {
     func presentFetchFollowerPosts(hasil: Double)
     func error(message: String)
+    func showPost(posts: [Post])
 }
 
 class ViewPresenster: NSObject {
@@ -27,9 +30,24 @@ class ViewPresenster: NSObject {
         } else {
             presenter.error("Error parsing angka")
         }
-        
+    }
     
-        
+    func getPost(){
+        APIManager.getPosts { (results, error) in
+            var posts = Array<Post>()
+            if let arr =  JSONDecoder(results!).array {
+                for decoder in arr {
+                    do {
+                        posts.append(try Post(decoder))
+                    } catch {
+                        print("unable to parse the JSON")
+                    }
+                    
+                }
+                
+            }
+            self.presenter.showPost(posts)
+        };
     }
     
     

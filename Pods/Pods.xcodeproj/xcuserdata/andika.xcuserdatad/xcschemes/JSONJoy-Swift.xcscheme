@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BF81237F03714AA8C8A8D317'
-               BlueprintName = 'Pods-MVP-Swift'
+               BlueprintIdentifier = '848CBE15C44B60DC0CD5FBAF'
+               BlueprintName = 'JSONJoy-Swift'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_MVP_Swift.framework'>
+               BuildableName = 'JSONJoy.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

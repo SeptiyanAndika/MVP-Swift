@@ -1,10 +1,13 @@
 PODS:
   - Alamofire (3.3.1)
+  - JSONJoy-Swift (2.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
+  - JSONJoy-Swift (~> 2.0)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  JSONJoy-Swift: 9dc31dfb9e551c3ae7781513a86e369598102653
 
 COCOAPODS: 0.39.0

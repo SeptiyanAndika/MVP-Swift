@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'MVP-Swift' do
  pod 'Alamofire', '~> 3.3'
+ pod 'JSONJoy-Swift', '~> 2.0'
 end
 
 target 'MVP-SwiftTests' do

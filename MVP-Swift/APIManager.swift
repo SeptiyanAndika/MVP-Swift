@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import Alamofire
 
 struct APIManager {
     #if PRODUCTION
     static let baseURLString = "https://api.prodcution.com"
     #else
-    static let baseURLString = "http://api.staging.com"
+    static let baseURLString = "http://jsonplaceholder.typicode.com"
     #endif
 }

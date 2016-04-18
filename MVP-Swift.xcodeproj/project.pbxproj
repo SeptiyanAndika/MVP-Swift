@@ -17,6 +17,8 @@
 		090D01031CC584F100BE6454 /* ViewPresenster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D01021CC584F100BE6454 /* ViewPresenster.swift */; };
 		090D01051CC584FA00BE6454 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D01041CC584FA00BE6454 /* BaseViewController.swift */; };
 		090D01091CC5867500BE6454 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D01081CC5867500BE6454 /* APIManager.swift */; };
+		090D010B1CC58DCD00BE6454 /* APIPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D010A1CC58DCD00BE6454 /* APIPost.swift */; };
+		090D010D1CC596A700BE6454 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D010C1CC596A700BE6454 /* Post.swift */; };
 		9794B9952BDEC57F4DF45362 /* Pods_MVP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4876FFB63C62C7F69D0008 /* Pods_MVP_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		090D01021CC584F100BE6454 /* ViewPresenster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenster.swift; sourceTree = "<group>"; };
 		090D01041CC584FA00BE6454 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		090D01081CC5867500BE6454 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		090D010A1CC58DCD00BE6454 /* APIPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPost.swift; sourceTree = "<group>"; };
+		090D010C1CC596A700BE6454 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		24CC1311AD51C8F25703EF9C /* Pods-MVP-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP-Swift/Pods-MVP-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		4E4876FFB63C62C7F69D0008 /* Pods_MVP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE64BD4653309B836C92B36 /* Pods-MVP-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVP-Swift/Pods-MVP-Swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				090D01081CC5867500BE6454 /* APIManager.swift */,
+				090D010A1CC58DCD00BE6454 /* APIPost.swift */,
 			);
 			name = Api;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 		090D01071CC5850700BE6454 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				090D010C1CC596A700BE6454 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -372,10 +378,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090D010B1CC58DCD00BE6454 /* APIPost.swift in Sources */,
 				090D01031CC584F100BE6454 /* ViewPresenster.swift in Sources */,
 				090D01051CC584FA00BE6454 /* BaseViewController.swift in Sources */,
 				090D01091CC5867500BE6454 /* APIManager.swift in Sources */,
 				090D00D41CC5840600BE6454 /* ViewController.swift in Sources */,
+				090D010D1CC596A700BE6454 /* Post.swift in Sources */,
 				090D00D21CC5840600BE6454 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

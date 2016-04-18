@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSONJoy-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MVP-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06C6E8FE37FA00CC40475AB3F10AF5D1</key>
+		<key>0F9ACA27E9A13B3469DF089126FB4343</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74D746023527F3EEA56BFD71F01F77C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

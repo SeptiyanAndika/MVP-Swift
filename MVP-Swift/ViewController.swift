@@ -13,6 +13,7 @@ class ViewController: BaseViewController {
     @IBOutlet weak var fieldParam1: UITextField!
     @IBOutlet weak var fieldParam2: UITextField!
     @IBOutlet weak var labelHasil: UILabel!
+    @IBOutlet weak var labelTotalPost: UILabel!
     
     var presenter: ViewPresenster!;
     
@@ -20,7 +21,6 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = ViewPresenster(presenter: self);
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -33,6 +33,11 @@ class ViewController: BaseViewController {
           presenter.hitung(fieldParam1.text!,param2: fieldParam2.text!)
     }
 
+    @IBAction func getPosts(sender: AnyObject) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        presenter.getPost()
+    }
+
 }
 
 
@@ -43,6 +48,11 @@ extension ViewController:ViewPresensterProtocol{
     
     func error(message: String){
         self.showAlert("Error", message: message)
+    }
+    
+    func showPost(posts: [Post]){
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        labelTotalPost.text = "Total Posts : \(posts.count)"
     }
     
 }
